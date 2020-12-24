@@ -1,0 +1,14 @@
+header {
+    background: url(./imgs/200310-fallon-westworld-tease_odtgtu.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+nav {
+    opacity: .8;
+}
+
+.section {
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+}

@@ -14,6 +14,24 @@
 </head>
 
 <body>
+    <nav class="nav-wrapper">
+        <a href="#" class="brand-logo">Brand</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-links">
+            <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="project.html">Login</a></li>
+        </ul>
+    </nav>
+    <ul class="sidenav right" id="mobile-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="project.html">Login</a></li>
+    </ul>
     <div class="container">
         <article>
             <h1 class="red-text text-lighten-2">head</h1>
@@ -56,7 +74,7 @@
         </article>
         <article>
             <h1 class="red-text text-lighten-2">colors</h1>
-            <a href="https://materializecss.com/color.html">materialize css colors</a>
+            <a href="https://materializecss.com/color.html" target="_blank">materialize css colors</a>
             <p class="flow-text red lighten-5">add background color and lighten it</p>
             <code>class="red lighten-5"</code>
             <p class="flow-text red lighten-5">add text color and darken it</p>
@@ -111,7 +129,7 @@
         </article>
         <article>
             <h1 class="red-text text-lighten-2">icons</h1>
-            <a href="https://material.io/resources/icons/?style=baseline">material icons</a>
+            <a href="https://material.io/resources/icons/?style=baseline" target="_blank">material icons</a>
             <p class="flow-text red lighten-5">just an icon 'accessibility'</p>
             <i class="material-icons">accessibility</i><br>
             <code>&lt;i class="material-icons"&gt;accessibility&lt;/i&gt;</code>
@@ -130,7 +148,7 @@
             <p class="flow-text red lighten-5">folder</p>
             <i class="material-icons blue-text text-lighten-1">folder</i><br>
             <code>&lt;i class="material-icons blue-text text-lighten-1"&gt;folder&lt;/i&gt;</code>
-            <h2>icons on buttons</h2>
+            <h2 class="red-text text-lighten-2">icons on buttons</h2>
             <p class="flow-text red lighten-5">send</p>
             <a href="#" class="btn blue">
                 <span>SEND</span>
@@ -142,229 +160,451 @@
     &lt;span&gt;SEND&lt;/span&gt;
     &lt;i class="material-icons right"&gt;send&lt;/i&gt;
 &lt;/a&gt;
-</pre>
+                </pre>
             </code>
             <p class="flow-text red lighten-5">email</p>
-            <a href="" class="btn pink">
+            <a href="#" class="btn pink">
                 <span>mail</span>
                 <i class="material-icons left">email</i>
             </a><br>
             <code>
-<pre>
+                <pre>
 &lt;a href="#" class="btn pink"&gt;
     &lt;span&gt;mail&lt;/span&gt;
     &lt;i class="material-icons left"&gt;email&lt;/i&gt;
 &lt;/a&gt;
+                </pre>
+            </code>
+            <h2 class="red-text text-lighten-2">icons on floating buttons</h2>
+            <p class="flow-text red lighten-5">add</p>
+            <a href="#" class="btn-floating blue pulse">
+                <i class="material-icons">add</i>
+            </a><br>
+            <code>
+                <pre>
+&lt;a href="#" class="btn-floating blue pulse"&gt;
+    &lt;i class="material-icons"&gt;add&lt;/i&gt;
+&lt;/a&gt;
+                </pre>
+            </code>
+            <p class="flow-text red lighten-5">remove</p>
+            <a href="#" class="btn-floating red pulse">
+                <i class="material-icons">remove</i><br>
+            </a>
+            <code>
+                <pre>
+&lt;a href="#" class="btn-floating red pulse"&gt;
+    &lt;i class="material-icons"&gt;remove&lt;/i&gt;
+&lt;/a&gt;
+                </pre>
+            </code>
+            <p class="flow-text red lighten-5">edit</p>
+            <a href="#" class="btn-floating yellow pulse">
+                <i class="material-icons">edit</i><br>
+            </a>
+            <pre>
+&lt;a href="#" class="btn-floating yellow pulse"&gt;
+    &lt;i class="material-icons"&gt;edit&lt;/i&gt;
+&lt;/a&gt;
+            </pre>
+        </article>
+        <article>
+            <h1 class="red-text text-lighten-2">responsive grid</h1>
+            <a href="https://material.io/design/layout/responsive-layout-grid.html" target="_blank">responsive layout
+                grid</a>
+            <p class="flow-text red lighten-5">same size for each column</p>
+            <div class="row">
+                <div class="col x">content</div>
+                <div class="col x">content</div>
+                <div class="col x">content</div>
+                <div class="col x">content</div>
+            </div>
+            <code>
+                <pre>
+&lt;div class="row"&gt;
+    &lt;div class="col"&gt;edit&lt;/div&gt;
+    &lt;div class="col"&gt;edit&lt;/div&gt;
+    &lt;div class="col"&gt;edit&lt;/div&gt;
+    &lt;div class="col"&gt;edit&lt;/div&gt;
+&lt;/div&gt;                
+                </pre>
+            </code>
+            <p class="flow-text red lighten-5">3 columns for small screen sizes and up</p>
+            <div class="row">
+                <div class="col s3 x">content</div>
+                <div class="col s3 x">content</div>
+                <div class="col s3 x">content</div>
+                <div class="col s3 x">content</div>
+            </div>
+            <code>
+                <pre>
+&lt;div class="row"&gt;
+    &lt;div class="col s3"&gt;content&lt;/div&gt;
+    &lt;div class="col s3"&gt;content&lt;/div&gt;
+    &lt;div class="col s3"&gt;content&lt;/div&gt;
+    &lt;div class="col s3"&gt;content&lt;/div&gt;
+&lt;/div&gt;                
+                </pre>
+            </code>
+            <p class="flow-text red lighten-5">6 columns for small screen sizes, 3 for medium ones</p>
+            <div class="row">
+                <div class="col s6 m3 x">content</div>
+                <div class="col s6 m3 x">content</div>
+                <div class="col s6 m3 x">content</div>
+                <div class="col s6 m3 x">content</div>
+            </div>
+            <code>
+                <pre>
+&lt;div class="row"&gt;
+    &lt;div class="col s6 m3"&gt;content&lt;/div&gt;
+    &lt;div class="col s6 m3"&gt;content&lt;/div&gt;
+    &lt;div class="col s6 m3"&gt;content&lt;/div&gt;
+    &lt;div class="col s6 m3"&gt;content&lt;/div&gt;
+&lt;/div&gt;                
+                </pre>
+            </code>
+            <p class="flow-text red lighten-5">12 columns for small screen sizes, 6 for medium ones, 3 for large ones, 1
+                for xtra large ones</p>
+            <div class="row">
+                <div class="col s12 m6 l3 xl1 x">content</div>
+                <div class="col s12 m6 l3 xl1 x">content</div>
+                <div class="col s12 m6 l3 xl1 x">content</div>
+                <div class="col s12 m6 l3 xl1 x">content</div>
+            </div>
+            <code>
+                <pre>
+&lt;div class="row"&gt;
+    &lt;div class="col s12 m6 l3 xl1"&gt;content&lt;/div&gt;
+    &lt;div class="col s12 m6 l3 xl1"&gt;content&lt;/div&gt;
+    &lt;div class="col s12 m6 l3 xl1"&gt;content&lt;/div&gt;
+    &lt;div class="col s12 m6 l3 xl1"&gt;content&lt;/div&gt;
+&lt;/div&gt;                
+                </pre>
+            </code>
+        </article>
+        <article>
+            <h1 class="red-text text-lighten-2">shadows & depth</h1>
+            <p class="flow-text red lighten-5">various shadow depths</p>
+            <div class="row">
+                <div class="col s2">
+                    <div class="y"></div>
+                </div>
+                <div class="col s2">
+                    <div class="z-depth-1 y"></div>
+                </div>
+                <div class="col s2">
+                    <div class="z-depth-2 y"></div>
+                </div>
+                <div class="col s2">
+                    <div class="z-depth-3 y"></div>
+                </div>
+                <div class="col s2">
+                    <div class="z-depth-4 y"></div>
+                </div>
+                <div class="col s2">
+                    <div class="z-depth-5 y"></div>
+                </div>
+            </div>
+            <code>
+                <pre>
+&lt;div class="row"&gt;
+    &lt;div class="col s2"&gt;
+        &lt;div&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col s2"&gt;
+        &lt;div class="z-depth-1"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col s2"&gt;
+        &lt;div class="z-depth-2"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col s2"&gt;
+        &lt;div class="z-depth-3"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col s2"&gt;
+        &lt;div class="z-depth-4"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col s2"&gt;
+        &lt;div class="z-depth-5"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;                
+                </pre>
+            </code>
+        </article>
+        <article>
+            <h1 class="red-text text-lighten-2">navbars</h1>
+            <p class="flow-text red lighten-5">nav.navbar</p>
+            <nav class="nav-wrapper">
+                <a href="#" class="brand-logo">Brand</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </nav>
+            <ul class="sidenav" id="mobile-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+            <code>
+                <pre>
+&lt;nav class="nav-wrapper"&gt;
+    &lt;a href="#" class="brand-logo left"&gt;Brand&lt;/a&gt;
+    &lt;a href="#" class="sidebar-trigger"&gt;
+        &lti class="material-icons"&gt;menu&lt;/a&gt;
+    &lt;/a&gt;
+    &lt;ul class="right"&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;                    
+        &lt;li&gt;&lt;a href="#"&gt;Login&lt;/a&gt;&lt;/li&gt;                    
+    &lt;/ul&gt;
+&lt;/nav&gt;            
+                </pre>
+            </code>
+            <p class="flow-text red lighten-5">nav.navbar</p>
+            <nav class="nav-wrapper">
+                <a href="#" class="brand-logo">Brand</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" class="btn-floating z-depth-0"><i class="material-icons">notifications</i></a></li>
+                    <li><span class="badge white-text pink new">5</span></li>
+                </ul>
+            </nav>
+            <ul class="sidenav" id="mobile-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <code>
+                <pre>
+&lt;nav class="nav-wrapper"&gt;
+    &lt;a href="#" class="brand-logo left"&gt;Brand&lt;/a&gt;
+    &lt;a href="#" class="sidebar-trigger"&gt;
+        &lti class="material-icons"&gt;menu&lt;/a&gt;
+    &lt;/a&gt;
+    &lt;ul class="right"&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;                    
+        &lt;li&gt;&lt;a href="#"&gt;Login&lt;/a&gt;&lt;/li&gt;                    
+    &lt;/ul&gt;
+&lt;/nav&gt;            
+                </pre>
+            </code>
+        </article>
+        <article>
+            <h1 class="red-text text-lighten-2">cards</h1>
+            <p class="flow-text red lighten-5"></p>
+            <div class="row">
+                <div class="col s12 l6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./imgs/200310-fallon-westworld-tease_odtgtu.jpg" alt="westworld">
+                            <a href="#" class="btn-floating pink pulse halfway-fab">
+                                <i class="material-icons">favorite</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">just a title</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">additional info?</a>
+                            <a href="#">know more?</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 l6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./imgs/200310-fallon-westworld-tease_odtgtu.jpg" alt="westworld">
+                            <a href="#" class="btn-floating pink pulse halfway-fab">
+                                <i class="material-icons">favorite</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">just another title</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">additional info?</a>
+                            <a href="#">know more?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <code>
+<pre>
+&lt;div class="row"&gt;
+    &lt;div class="col s12 l6"&gt;
+        &lt;div class="card"&gt;
+            &lt;div class="card-image"&gt;
+                &lt;img src="./imgs/200310-fallon-westworld-tease_odtgtu.jpg" alt="westworld"&gt;
+                &lt;a href="#" class="btn-floating pink pulse halfway-fab"&gt;
+                    &lt;i class="material-icons"&gt;favorite&lt;/i&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="card-content"&gt;
+                &lt;span class="card-title"&gt;just a title&lt;/span&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="card-action"&gt;
+                &lt;a href="#"&gt;additional info?&lt;/a&gt;
+                &lt;a href="#"&gt;know more?&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col s12 l6"&gt;
+        &lt;div class="card"&gt;
+            &lt;div class="card-image"&gt;
+                &lt;img src="./imgs/200310-fallon-westworld-tease_odtgtu.jpg" alt="westworld"&gt;
+                &lt;a href="#" class="btn-floating pink pulse halfway-fab"&gt;
+                    &lt;i class="material-icons"&gt;favorite&lt;/i&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="card-content"&gt;
+                &lt;span class="card-title"&gt;just another title&lt;/span&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="card-action"&gt;
+                &lt;a href="#"&gt;additional info?&lt;/a&gt;
+                &lt;a href="#"&gt;know more?&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 </pre>
             </code>
-            <p class="flow-text red lighten-5">folder</p>
-            <i class="material-icons blue-text text-lighten-1">folder</i><br>
-            <code>&lt;i class="material-icons blue-text text-lighten-1"&gt;folder&lt;/i&gt;</code>
-            <p class="flow-text red lighten-5">folder</p>
-            <i class="material-icons blue-text text-lighten-1">folder</i><br>
-            <code>&lt;i class="material-icons blue-text text-lighten-1"&gt;folder&lt;/i&gt;</code>
         </article>
         <article>
-            <h1 class="red-text text-lighten-2"></h1>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
+            <h1 class="red-text text-lighten-2">collections</h1>
+            <p class="flow-text red lighten-5">simple list (with header)</p>
+            <ul class="collection with-header">
+                <li class="collection-header"><h4>the items</h4></li>
+                <li class="collection-item">item 1</li>
+                <li class="collection-item">item 2</li>
+                <li class="collection-item">item 3</li>
+                <li class="collection-item">item 4</li>
+                <li class="collection-item">item 5</li>
+            </ul>
+            <code>
+<pre>
+&lt;ul class="collection with-header"&gt;
+    &lt;li class="collection-header"&gt;&lt;h4&gt;the items&lt;/h4&gt;&lt;/li&gt;
+    &lt;li class="collection-item"&gt;item 1&lt;/li&gt;
+    &lt;li class="collection-item"&gt;item 2&lt;/li&gt;
+    &lt;li class="collection-item"&gt;item 3&lt;/li&gt;
+    &lt;li class="collection-item"&gt;item 4&lt;/li&gt;
+    &lt;li class="collection-item"&gt;item 5&lt;/li&gt;
+&lt;/ul&gt;    
+</pre>
+            </code>
+            <p class="flow-text red lighten-5">expanded list</p>
+            <ul class="collection with-header">
+                <li class="collection-header"><h4>the items</h4></li>
+                <li class="collection-item avatar">
+                    <i class="material-icons circle blue">person</i>
+                    <span class="title">user 1</span>
+                    <p class="grey-text">miau</p>
+                    <a href="#" class="secondary-content">
+                        <i class="material-icons blue-text">email</i>
+                    </a>
+                </li>
+                <li class="collection-item avatar">
+                    <i class="material-icons circle blue">person</i>
+                    <span class="title">user 2</span>
+                    <p class="grey-text">miau</p>
+                    <a href="#" class="secondary-content">
+                        <i class="material-icons blue-text">email</i>
+                    </a>
+                </li>
+                <li class="collection-item avatar">
+                    <i class="material-icons circle blue">person</i>
+                    <span class="title">user 3</span>
+                    <p class="grey-text">miau</p>
+                    <a href="#" class="secondary-content">
+                        <i class="material-icons blue-text">email</i>
+                    </a>
+                </li>
+            </ul>
+            <code>
+<pre>
+&lt;ul class="collection with-header"&gt;
+    &lt;li class="collection-header"&gt;&lt;h4&gt;the items&lt;/h4&gt;&lt;/li&gt;
+    &lt;li class="collection-item avatar"&gt;
+        &lt;i class="material-icons circle blue"&gt;person&lt;/i&gt;
+        &lt;span class="title"&gt;user 1&lt;/span&gt;
+        &lt;p class="grey-text"&gt;miau&lt;/p&gt;
+        &lt;a href="#" class="secondary-content"&gt;
+            &lt;i class="material-icons blue-text"&gt;email&lt;/i&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="collection-item avatar"&gt;
+        &lt;i class="material-icons circle blue"&gt;person&lt;/i&gt;
+        &lt;span class="title"&gt;user 2&lt;/span&gt;
+        &lt;p class="grey-text"&gt;miau&lt;/p&gt;
+        &lt;a href="#" class="secondary-content"&gt;
+            &lt;i class="material-icons blue-text"&gt;email&lt;/i&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="collection-item avatar"&gt;
+        &lt;i class="material-icons circle blue"&gt;person&lt;/i&gt;
+        &lt;span class="title"&gt;user 3&lt;/span&gt;
+        &lt;p class="grey-text"&gt;miau&lt;/p&gt;
+        &lt;a href="#" class="secondary-content"&gt;
+            &lt;i class="material-icons blue-text"&gt;email&lt;/i&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+            </code>
         </article>
         <article>
-            <h1 class="red-text text-lighten-2"></h1>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
+            <h1 class="red-text text-lighten-2">modals</h1>
+            <p class="flow-text red lighten-5">aka pop-ups</p>
+            <a href="#terms" class="btn orange modal-trigger">terms & conditions</a>
+            <div class="modal" id="terms">
+                <div class="modal-content">
+                    <h4>terms & conditions</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur facilis voluptatum iusto nostrum, architecto delectus aliquam error quod, reprehenderit minima ipsum aliquid quisquam veniam! Odit atque est sit aliquam mollitia.</p>
+                </div>
+            </div>
+            <code>
+                <pre>
+&lt;div class="modal" id="terms"&gt;
+    &lt;div class="modal-content"&gt;
+        &lt;h4&gt;terms & conditions&lt;/h4&gt;
+        &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur facilis voluptatum iusto nostrum, architecto delectus aliquam error quod, reprehenderit minima ipsum aliquid quisquam veniam! Odit atque est sit aliquam mollitia.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;        
+                </pre>
+            </code>
         </article>
-        <article>
-            <h1 class="red-text text-lighten-2"></h1>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-        </article>
-        <article>
-            <h1 class="red-text text-lighten-2"></h1>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-        </article>
-        <article>
-            <h1 class="red-text text-lighten-2"></h1>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-        </article>
-        <article>
-            <h1 class="red-text text-lighten-2"></h1>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-        </article>
-        <article>
-            <h1 class="red-text text-lighten-2"></h1>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-        </article>
-        <article>
-            <h1 class="red-text text-lighten-2"></h1>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-        </article>
-        <article>
-            <h1 class="red-text text-lighten-2"></h1>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-        </article>
-        <article>
-            <h1 class="red-text text-lighten-2"></h1>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-        </article>
-        <article>
-            <h1 class="red-text text-lighten-2"></h1>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-        </article>
-        <article>
-            <h1 class="red-text text-lighten-2"></h1>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-        </article>
-        <article>
-            <h1 class="red-text text-lighten-2"></h1>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-        </article>
-        <article>
-            <h1 class="red-text text-lighten-2"></h1>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-        </article>
-        <article>
-            <h1 class="red-text text-lighten-2"></h1>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-        </article>
-        <article>
-            <h1 class="red-text text-lighten-2"></h1>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-        </article>
-        <article>
-            <h1 class="red-text text-lighten-2"></h1>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-        </article>
-        <article>
-            <h1 class="red-text text-lighten-2"></h1>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-        </article>
-        <article>
-            <h1 class="red-text text-lighten-2"></h1>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-        </article>
-        <article>
-            <h1 class="red-text text-lighten-2"></h1>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-        </article>
-        <article>
-            <h1 class="red-text text-lighten-2"></h1>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-        </article>
-        <article>
-            <h1 class="red-text text-lighten-2"></h1>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-        </article>
-        <article>
-            <h1 class="red-text text-lighten-2"></h1>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-        </article>
-        <article>
-            <h1 class="red-text text-lighten-2"></h1>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-        </article>
-        <article>
-            <h1 class="red-text text-lighten-2"></h1>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-        </article>
-        <article>
-            <h1 class="red-text text-lighten-2"></h1>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-        </article>
-        <article>
-            <h1 class="red-text text-lighten-2"></h1>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-        </article>
-        <article>
-            <h1 class="red-text text-lighten-2"></h1>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-            <p class="flow-text red lighten-5"></p>
-            <code></code>
-        </article>
-
     </div>
 
+    <!-- jquery https://jquery.com/download/ download compressed-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        })
+        $(document).ready(function(){
+            $('.modal').modal();
+        })
+    </script>
 </body>
 
 </html>

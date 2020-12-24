@@ -1,3 +1,27 @@
 .box {
     height: 200px;
 }
+
+/* just for the grid boxes */
+
+.row > .x {
+    padding: 10px;
+    background: #ddd;
+    border: 1px solid #fff;
+    line-height: 60px;
+}
+
+/* shadow & depth */
+
+.col > .y {
+    background: lightblue;
+    height: 60px;
+}
+
+/* badge */
+
+nav .badge {
+    position: relative;
+    top: 22px;
+    right: 20px;
+}
